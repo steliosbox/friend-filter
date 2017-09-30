@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <title>Друго фильтер</title>
+</head>
+<body>
+<section class="ff">
+
+    <header class="header">
+        <div class="header_title">Выберите друзей</div>
+        <div class="header_close flaticon"></div>
+    </header>
+
+    <nav class="search">
+
+        <div class="search__side">
+            <div class="search__side_inner">
+                <div class="search__icon flaticon"></div>
+                <input type="text" class="search__input" data-input="all" placeholder="Начните вводить имя друга"/>
+            </div>
+        </div>
+
+        <div class="search__side">
+            <div class="search__side_inner">
+                <div class="search__icon">
+                    <i class="flaticon"></i>
+                </div>
+                <input type="text" class="search__input" data-input="favorite" placeholder="Название"/>
+            </div>
+        </div>
+    </nav>
+
+    <div class="title">
+        <div class="title__side">
+            <span class="all-friends">Ваши друзья</span>
+        </div>
+
+        <div class="title__side">
+            <span class="title__favorites">Друзья в списке</span>
+        </div>
+    </div>
+
+    <article class="ff__container">
+
+        <aside class="ff__content drag-content__all" data-container="all"></aside>
+        <aside class="ff__content drag-content__favorite" data-container="favorite"></aside>
+
+    </article>
+
+    <footer class="footer">
+        <button class="footer_save">Сохранить</button>
+    </footer>
+
+</section>
+<script src="https://vk.com/js/api/openapi.js?147" type="text/javascript"></script>
+
+</body>
+</html>
